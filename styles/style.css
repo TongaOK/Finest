@@ -1,6 +1,11 @@
-*{
-box-sizing:border-box;
+/*Inicio Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/*Inicio Reset*/
+
 h1{font-size: 3.4em;}
 h2{font-size: 3.1em;}
 h3{font-size: 3.1em;}
@@ -10,4 +15,28 @@ p{ font-size: 1,5em;}
 #hero{
     background-color: rgb(212, 29, 29);
     align-items: center;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: black;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: blue;
+}
+
+.footer-categorias {
+    display: flex;
+    flex-direction: column;
+    color: blue;
+}
+
+.footer-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    color: blue;
+    justify-content: space-around;
 }
