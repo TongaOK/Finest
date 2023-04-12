@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
 /*Inicio Reset*/
 * {
     margin: 0;
@@ -5,38 +7,107 @@
     box-sizing: border-box;
 }
 /*Inicio Reset*/
-
+/*
 h1{font-size: 3.4em;}
 h2{font-size: 3.1em;}
 h3{font-size: 3.1em;}
 h4{font-size: 3.1em;}
 p{ font-size: 1,5em;}
+*/
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0077C0;
+}
 
 #hero{
     background-color: rgb(212, 29, 29);
     align-items: center;
 }
 
+.forms-container {
+    background-color: #FAFAFA;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contacto {
+    color: #0077C0;
+}
+
+label, .sexo {
+    color: #1D242B;
+}
+
+.input, select {
+    margin-top: 4px;
+    width: 20%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid #C7EEFF;
+    border-radius: 4px;
+}
+
+textarea {
+    border: 1px solid #C7EEFF;
+    border-radius: 4px;
+}
+
+
+.boton {
+    background-color: #C7EEFF;
+    border-color: transparent;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #0077C0;
+}
+
 .pie-pagina {
     width: 100%;
-    background-color: black;
+    background-color: #1D242B;
+    padding: 1rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: blue;
+    color: #0077C0;
 }
+
+.logo {
+    padding-top: 1.5rem;
+}
+
 
 .footer-categorias {
     display: flex;
     flex-direction: column;
-    color: blue;
+    color: #0077C0;
+    justify-content: space-evenly;
 }
 
 .footer-redes-sociales {
     display: flex;
     flex-direction: column;
-    color: blue;
-    justify-content: space-around;
+    color: #0077C0;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    font-size: x-large;
 }

@@ -72,45 +72,44 @@
         
 
         <!--Inicio Formulario-->
-    <br><nav>
-        <h2>Contacto</h2><br>
+    <nav class="forms-container">
+        <h2 class="contacto">Contacto</h2><br>
         <form action="enviar.php" method="post" enctype="text/plain">
             <label for="nombre1">Nombre</label>
-            <input type="text" name="nombre1" id="nombre1" required placeholder="Su Nombre"><br>
+            <input class="input" type="text" name="nombre1" id="nombre1" required placeholder="Su Nombre"><br>
             <label for="apellido1">Apellido</label>
-            <input type="text" name="apellido1" id="apellido1" required placeholder="Su apellido"><br>
+            <input class="input" type="text" name="apellido1" id="apellido1" required placeholder="Su apellido"><br>
             <label for="email1">Correo Electronico</label>
-            <input type="email" name="email1" id="email1" required placeholder="ejemplo@ejemplo.com"><br>
+            <input class="input" type="email" name="email1" id="email1" required placeholder="ejemplo@ejemplo.com"><br>
             <label for="tel1">Telefono</label>
-            <input type="tel" name="tel1" id="tel1" required placeholder="Su Telefono"><br>
+            <input class="input" type="tel" name="tel1" id="tel1" required placeholder="Su Telefono"><br>
             <label>Mensaje</label><br>
             <textarea cols="30" rows="5" required placeholder="Consultas generales"></textarea><br>
-            <h4>Sexo:</h4>
-            <p class="sexo">Hombre</p>
-            <input class="sexo" type="radio" name="sexo" value="hombre">
-            <p class="sexo">Mujer</p>
-            <input class="sexo" type="radio" name="sexo" value="mujer">
-            <p class="sexo">No binario</p>
-            <input class="sexo" type="radio" name="sexo" value="no binario"><br>
+            <h4 class="sexo">Sexo:</h4>
+            <select id="country" name="country">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="no-binario">No binario</option>
+            </select>
+            <br>
                 <input class="boton" type="submit" value="Enviar">
                 <input class="boton" type="reset" value="Borrar">
                 <input class="boton" type="button" value="Nada">
         </form>
-        </nav>
-        <br>
+    </nav>
         <!--Fin Formulario-->
         <!--Inicio Footer-->
     <footer class="pie-pagina">
         <div class="container">
             <div class="logo">
-                <p> &COPY; Finest 4.0</p>
+                <h1>F I N E S T</h1>
             </div>
             <div class="footer-categorias">
                 <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Work</li>
-                    <li>About</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </div>
             <div class="footer-redes-sociales">
